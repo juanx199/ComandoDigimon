@@ -18,7 +18,6 @@ public class OrdenEvolucionar implements OrdenDigivice {
         this.nuevaEtapa = nuevaEtapa;
         this.nuevoNombre = nuevoNombre;
     }
-
     @Override
     public void ejecutar() {
         // Guardamos el estado actual antes de cambiarlo
@@ -26,7 +25,6 @@ public class OrdenEvolucionar implements OrdenDigivice {
         this.nombreAnterior = digimon.getNombre();
         digimon.evolucionar(nuevaEtapa, nuevoNombre);
     }
-
     @Override
     public void deshacer() {
         // Restauramos el receptor a su estado anterior almacenado

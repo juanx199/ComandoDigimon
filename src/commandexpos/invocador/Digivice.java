@@ -6,7 +6,7 @@ import commandexpos.comando.OrdenDigivice;
 //INVOCADOR (Invoker): Inicia las solicitudes.
 //Guarda una referencia al comando y gestiona el historial de acciones.
 public class Digivice {
-    // Referencia al comando actual (como en el diagrama de Refactoring Guru)
+    // Referencia al comando actual 
     private OrdenDigivice comando;
     // Pila para permitir la funcionalidad de deshacer (Undo)
     private Stack<OrdenDigivice> historialComandos = new Stack<>();
